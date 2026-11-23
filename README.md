@@ -27,14 +27,4 @@ npm run preview
 
 Abra o endereço local apresentado pelo Vite Preview, aguarde o app carregar online uma vez e recarregue. Depois, no DevTools do navegador, use Network → Offline ou desligue a conexão. O app deverá continuar abrindo e permitindo adicionar, concluir, desmarcar e excluir tarefas; as alterações ficam no `localStorage` do mesmo navegador/dispositivo.
 
-Para distribuir pela internet, hospede em HTTPS. `localhost` é considerado contexto seguro para testes locais. Em alguns navegadores, a instalação pode aparecer no menu em vez de ser oferecida automaticamente.
-
-## Publicar no GitHub Pages
-
-O projeto já traz um fluxo automático em `.github/workflows/deploy.yml`: a cada envio para a branch `main`, o GitHub instala as dependências, gera a versão de produção e publica o app.
-
-1. Crie um repositório no GitHub e envie os arquivos do projeto (sem `node_modules` e sem `dist`; o `.gitignore` já cuida disso).
-2. No repositório, abra **Settings → Pages** e, em **Build and deployment → Source**, escolha **GitHub Actions**.
-3. Acompanhe a publicação na aba **Actions**. Quando terminar, o app estará em `https://SEU_USUARIO.github.io/NOME_DO_REPOSITORIO/`.
-
-O GitHub Pages usa HTTPS, então o app pode ser instalado como PWA a partir desse endereço, inclusive no celular.
+https://pedrocota.github.io/todo-pwa/
